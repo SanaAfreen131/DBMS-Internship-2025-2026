@@ -114,6 +114,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For questions or inquiries, reach out at: [[your-email@example.com](mailto:s.afreen@studenti.unipi.it)]
+For questions or inquiries, reach out at: [[s.afreen@studenti.unipi.it](mailto:s.afreen@studenti.unipi.it)]
 
 ---
