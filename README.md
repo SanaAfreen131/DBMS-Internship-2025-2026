@@ -23,7 +23,7 @@ Unlike conventional AI-powered chat platforms, Safe Sport Advisor enforces a **t
 Sensitive personal, medical, and sports-related data is **detected and analyzed locally**. Only anonymized information is ever sent outside the trusted environment.
 
 ### 🤖 Hybrid LLM Architecture
-- **Local LLM (Llama 3.1 via Ollama)**  
+- **Local LLM (Llama 3.2 via Ollama)**  
   Handles sensitive queries and privacy checks  
 - **External LLM (OpenAI API)**  
   Processes only anonymized, complex queries
