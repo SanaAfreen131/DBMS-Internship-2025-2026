@@ -1,6 +1,47 @@
 # 🛡️ Safe Sport Advisor  
 ### *Privacy-First AI Guidance for Athletes*
 
+---
+
+## 🧠 Technologies & Skills
+
+**AI & Machine Learning**
+- Large Language Models (LLMs)
+- Hybrid AI Architecture (Local + External Models)
+- Prompt Engineering
+- Data Anonymization & Privacy Filtering
+
+**Backend & APIs**
+- Node.js
+- Express.js
+- RESTful API Design
+- Middleware & Routing Logic
+
+**Privacy & Security**
+- Privacy-by-Design Architecture
+- Sensitive Data Detection
+- Secure Data Routing
+- Audit Logging & Traceability
+
+**Databases**
+- MongoDB (NoSQL)
+- Schema Design
+- Secure Data Storage
+
+**DevOps & Tools**
+- Ollama (Local LLM Deployment)
+- OpenAI API Integration
+- Git & GitHub
+- Environment Configuration
+
+**Frontend**
+- Web-Based Chat Interfaces
+- Client–Server Communication
+
+---
+
+![Safe Sport Advisor](https://images.unsplash.com/photo-1554284126-aa88f22d8b74)
+
 **Safe Sport Advisor** is a privacy-preserving intelligent advisory system designed to support athletes with **training optimization, injury management, recovery strategies, and health monitoring**—without compromising sensitive personal or medical data.
 
 Unlike conventional AI-powered chat platforms, Safe Sport Advisor enforces a **trusted privacy boundary**, ensuring confidential information is **never exposed to external services**.
@@ -23,7 +64,7 @@ Unlike conventional AI-powered chat platforms, Safe Sport Advisor enforces a **t
 Sensitive personal, medical, and sports-related data is **detected and analyzed locally**. Only anonymized information is ever sent outside the trusted environment.
 
 ### 🤖 Hybrid LLM Architecture
-- **Local LLM (Llama 3.2 via Ollama)**  
+- **Local LLM (Llama 3.1 via Ollama)**  
   Handles sensitive queries and privacy checks  
 - **External LLM (OpenAI API)**  
   Processes only anonymized, complex queries
@@ -125,16 +166,6 @@ Navigate to the frontend directory and start your preferred frontend server
 
 ---
 
-## 🧰 Technology Stack
-
-* **Frontend**: Web-based Chat Interface
-* **Backend**: Node.js + Express
-* **Local LLM**: Llama 3.1 via Ollama
-* **External LLM**: OpenAI API
-* **Database**: MongoDB
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome!
@@ -168,5 +199,4 @@ See the [LICENSE](LICENSE) file for details.
 
 ## 📬 Contact
 
-For questions or inquiries:
 📧 **[s.afreen@studenti.unipi.it](mailto:s.afreen@studenti.unipi.it)**
