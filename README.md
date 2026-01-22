@@ -1,92 +1,135 @@
-# Safe Sport Advisor
+# 🛡️ Safe Sport Advisor  
+### *Privacy-First AI Guidance for Athletes*
 
-## Overview
+![Safe Sport Advisor](https://images.unsplash.com/photo-1554284126-aa88f22d8b74)
 
-**Safe Sport Advisor** is a privacy-first intelligent advisory system designed to assist athletes with training, injury management, recovery, and health monitoring. Unlike traditional AI-powered chat systems, it ensures that sensitive personal, medical, and sports-related information is never exposed to external services.  
+**Safe Sport Advisor** is a privacy-preserving intelligent advisory system designed to support athletes with **training optimization, injury management, recovery strategies, and health monitoring**—without compromising sensitive personal or medical data.
 
-The system combines **local and external Large Language Models (LLMs)**, intelligent routing logic, and a **NoSQL database** for secure, scalable, and flexible data management.
-
----
-
-## Features
-
-- **Privacy-First Design**: Sensitive data is analyzed and anonymized locally before any external processing.  
-- **Hybrid LLM Architecture**: Uses a local LLM for sensitive queries and an external LLM (OpenAI API) for complex, anonymized queries.  
-- **Scalable Storage**: NoSQL database (MongoDB) stores messages, anonymized data, routing decisions, and audit logs.  
-- **Modular Architecture**: Easily extendable and maintainable backend and frontend components.  
+Unlike conventional AI-powered chat platforms, Safe Sport Advisor enforces a **trusted privacy boundary**, ensuring confidential information is **never exposed to external services**.
 
 ---
 
-## Architecture
+## 🌟 Why Safe Sport Advisor?
+
+- 🧠 Intelligent, athlete-focused AI guidance  
+- 🔒 Privacy-first architecture  
+- 🔀 Hybrid AI reasoning (local + external models)  
+- 📈 Scalable and modular system design  
+- 🗂️ Full auditability and traceability  
+
+---
+
+## 🔑 Key Features
+
+### 🔐 Privacy-First Design
+Sensitive personal, medical, and sports-related data is **detected and analyzed locally**. Only anonymized information is ever sent outside the trusted environment.
+
+### 🤖 Hybrid LLM Architecture
+- **Local LLM (Llama 3.1 via Ollama)**  
+  Handles sensitive queries and privacy checks  
+- **External LLM (OpenAI API)**  
+  Processes only anonymized, complex queries
+
+### 🗄️ Scalable NoSQL Storage
+- **MongoDB** stores:
+  - User messages  
+  - Anonymized data  
+  - Routing decisions  
+  - Audit and compliance logs  
+
+### 🧩 Modular & Extensible
+Backend and frontend components are designed for easy extension, maintenance, and future model upgrades.
+
+---
+
+## 🏗️ System Architecture
 
 The system consists of:
 
-1. **Frontend**: Web-based chat interface for user interactions.  
-2. **Backend**: Node.js + Express server for message validation, privacy enforcement, routing, and database operations.  
-3. **Local LLM**: Runs in a trusted environment (Llama 3.1 via Ollama) to detect and handle sensitive data.  
-4. **External LLM**: OpenAI API handles complex, anonymized queries.  
-5. **Database**: MongoDB stores messages, responses, anonymized data, and audit logs.  
+1. **Frontend**  
+   Web-based chat interface for athlete interaction
 
-The system enforces a **trusted privacy boundary** around the backend, local LLM, and database to ensure sensitive information never leaves the controlled environment.
+2. **Backend (Node.js + Express)**  
+   - Message validation  
+   - Privacy enforcement  
+   - Intelligent routing  
+   - Database operations  
+
+3. **Local LLM (Trusted Zone)**  
+   - Sensitive data detection  
+   - Local response generation  
+   - Data anonymization  
+
+4. **External LLM**  
+   - Receives anonymized input only  
+   - Generates advanced advisory responses  
+
+5. **Database (MongoDB)**  
+   - Secure message storage  
+   - Full audit trail  
+
+🛡️ A strict **privacy boundary** ensures sensitive information never leaves the controlled environment.
 
 ---
 
-## Installation
+## ⚙️ Installation
 
-1. **Clone the repository**  
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/yourusername/safe-sport-advisor.git
 cd safe-sport-advisor
 ````
 
-2. **Install backend dependencies**
+### 2️⃣ Install Backend Dependencies
 
 ```bash
 cd backend
 npm install
 ```
 
-3. **Set up MongoDB**
+### 3️⃣ Set Up MongoDB
 
-* Ensure MongoDB is running locally or provide a connection URI in your backend configuration.
+* Ensure MongoDB is running locally
+* Or configure a MongoDB connection URI in the backend settings
 
-4. **Run the backend**
+### 4️⃣ Run the Backend
 
 ```bash
 npm start
 ```
 
-5. **Run the frontend**
+### 5️⃣ Run the Frontend
 
-* Navigate to the frontend folder and start your preferred frontend server (e.g., React, Vue, or plain HTML/JS).
+Navigate to the frontend directory and start your preferred frontend server
+(e.g., React, Vue, or plain HTML/JavaScript).
 
 ---
 
-## Usage
+## 🚀 Usage
 
-1. Open the web-based chat interface.
-2. Enter your query (sports guidance, injury info, or health metrics).
+1. Open the web-based chat interface
+2. Enter a sports, injury, or health-related query
 3. The system will:
 
-   * Analyze for sensitive data locally
-   * Anonymize sensitive elements if required
-   * Route the query to the appropriate LLM
-   * Generate a secure and privacy-preserving response
+   * 🔍 Analyze sensitive data locally
+   * ✂️ Anonymize private information if required
+   * 🔀 Route the query to the appropriate LLM
+   * 🧠 Generate a secure, privacy-preserving response
 
 ---
 
-## Privacy and Security
+## 🔒 Privacy & Security
 
-* Sensitive data never leaves the local environment.
-* External LLMs only receive anonymized input.
-* Full audit trail maintained in the NoSQL database.
-* All routing and responses are logged for traceability.
+* Sensitive data never leaves the local environment
+* External LLMs receive anonymized input only
+* Full audit trail maintained in MongoDB
+* All routing and responses are logged for transparency
 
 ---
 
-## Technology Stack
+## 🧰 Technology Stack
 
-* **Frontend**: Web-based chat interface
+* **Frontend**: Web-based Chat Interface
 * **Backend**: Node.js + Express
 * **Local LLM**: Llama 3.1 via Ollama
 * **External LLM**: OpenAI API
@@ -94,26 +137,38 @@ npm start
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
+Contributions are welcome!
 
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-name`.
-3. Make your changes and commit: `git commit -m 'Add feature'`.
-4. Push to your branch: `git push origin feature-name`.
-5. Create a pull request.
+1. Fork the repository
+2. Create a new branch
+
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes
+
+   ```bash
+   git commit -m "Add feature"
+   ```
+4. Push to your branch
+
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request 🎉
 
 ---
 
-## License
+## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Contact
-
-For questions or inquiries, reach out at: [[s.afreen@studenti.unipi.it](mailto:s.afreen@studenti.unipi.it)]
+This project is licensed under the **MIT License**.
+See the [LICENSE](LICENSE) file for details.
 
 ---
+
+## 📬 Contact
+
+For questions or inquiries:
+📧 **[s.afreen@studenti.unipi.it](mailto:s.afreen@studenti.unipi.it)**
